@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import ImageViewer from './ImageViewer.js'
+import Mascotas from './components/mascotas.js';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Container className="mt-3">
+ <Row>
+   <App />
+ </Row>
+ </Container>
 );
 
 // If you want to start measuring performance in your app, pass a function
